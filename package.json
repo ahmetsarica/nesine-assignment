@@ -11,7 +11,9 @@
   "dependencies": {
     "next": "15.0.1",
     "react": "19.0.0-rc-69d4b800-20241021",
-    "react-dom": "19.0.0-rc-69d4b800-20241021"
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "react-window": "^1.8.10",
+    "react-windowed-table": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.9",
@@ -21,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-window": "^1.8.8",
     "babel-loader": "^9.2.1",
     "daisyui": "^4.12.13",
     "eslint": "^8",
