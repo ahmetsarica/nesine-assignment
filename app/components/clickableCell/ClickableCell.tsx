@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Bet, useAppContext } from '../../context';
+import { Bet, useAppContext } from '@/app/context/index';
 
 interface ClickableCellProps {
   code?: string;
@@ -20,7 +20,7 @@ const ClickableCell = (props: ClickableCellProps) => {
   const selectBet = () => {
     setSelectedBets((prev: Bet[]) => {
       // if the codes are same it means bet is changed. Removes the old bet
-      let filteredBets = prev.filter((bet) => bet.code !== code);
+      const filteredBets = prev.filter((bet) => bet.code !== code);
 
       const currentBet: Bet = selectedBets.find(
         (item: Bet) => item.code === code

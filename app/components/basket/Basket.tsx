@@ -1,6 +1,6 @@
 'use client';
 import React, { useMemo } from 'react';
-import { Bet, useAppContext } from '../../context';
+import { Bet, useAppContext } from '@/app/context/index';
 
 const Basket = () => {
   const { selectedBets } = useAppContext();

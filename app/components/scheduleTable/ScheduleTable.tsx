@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import ClickableCell from '../clickableCell/ClickableCell';
+import ClickableCell from '@/app/components/clickableCell/ClickableCell';
 import { Match } from '@/app/schedule/page';
 
 interface ScheduleTableProps {

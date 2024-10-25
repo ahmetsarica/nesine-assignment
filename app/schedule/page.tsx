@@ -1,5 +1,5 @@
 import React from 'react';
-import ScheduleTable from '../components/scheduleTable/ScheduleTable';
+import ScheduleTable from '@/app/components/scheduleTable/ScheduleTable';
 
 export interface Match {
   C: string; // Match code
