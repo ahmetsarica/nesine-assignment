@@ -12,8 +12,7 @@ const ScheduleTable = (props: ScheduleTableProps) => {
 
   const [visibleItems, setVisibleItems] = useState<Match[]>(
     initialData.slice(0, 20)
-  ); // Holds the visible items
-  const [visibleCount, setVisibleCount] = useState(20); // Keeps track of the number of visible items
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -35,10 +34,9 @@ const ScheduleTable = (props: ScheduleTableProps) => {
   }, [visibleItems]);
 
   const loadMoreItems = () => {
-    setVisibleCount((prevCount) => {
-      const newCount = prevCount + 20; // Load 20 more items
-      setVisibleItems(initialData.slice(0, newCount));
-      return newCount;
+    setVisibleItems((prevItems) => {
+      const newCount = prevItems.length + 20; // Load 20 more items
+      return initialData.slice(0, newCount);
     });
   };
 
