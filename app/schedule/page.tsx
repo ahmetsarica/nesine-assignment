@@ -42,8 +42,10 @@ interface OddsOption {
   IMF: boolean; // IMF flag
 }
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 const SchedulePage = async () => {
-  const response = await fetch('https://nesine-case-study.onrender.com/bets');
+  const response = await fetch(`${API_URL}/bets`);
   const data: Match[] = await response.json();
 
   return (
