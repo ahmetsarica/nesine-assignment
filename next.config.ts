@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+// next.config.js
+const path = require('path'); //eslint-disable-line
 
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  webpack: (config) => {
+    // You can customize the config here, but let's keep it simple for now
+    return config;
+  },
 };
-
-export default nextConfig;

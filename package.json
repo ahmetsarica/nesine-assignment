@@ -6,7 +6,8 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "webpack --config webpack.config.js"
+    "build": "next build",
+    "webpack": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "next": "15.0.1",
@@ -27,6 +28,9 @@
     "eslint-config-next": "15.0.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   }
 }
